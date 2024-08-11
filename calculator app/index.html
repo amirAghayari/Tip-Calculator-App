@@ -45,8 +45,53 @@
           </div>
 
           <div class="calc-div">
-            <div class="left-calc"></div>
-            <div class="right-calc">'</div>
+            <div class="left-calc">
+              <form action="">
+                <label for="" class="first-label label"> Bill </label>
+                <input type="number" class="first-input inps" value="$" />
+              </form>
+              <div class="select-div">
+                <h2 class="main-h2">Select Tip %</h2>
+                <div class="btn-div">
+                  <button class="select-btn">5%</button>
+                  <button class="select-btn">10%</button>
+                  <button class="select-btn">15%</button>
+                  <button class="select-btn">25%</button>
+                  <button class="select-btn">50%</button>
+                  <form action="">
+                    <input type="number" class="select-inp" />
+                  </form>
+                </div>
+              </div>
+              <form action="">
+                <div class="error-div">
+                  <label for="" class="secondary-label label"
+                    >Number of People</label
+                  >
+                  <p class="error-p">hi</p>
+                </div>
+                <input type="number" class="last-inp inps" />
+              </form>
+            </div>
+            <div class="right-calc">
+              <div class="right-firstdiv">
+                <div class="amount-div">
+                  <p class="amount-p right-p">
+                    Tip Amount <br /><span> / person </span>
+                  </p>
+                  <h1 class="shower">$0.00</h1>
+                </div>
+                <div class="total-div">
+                  <p class="amount-p right-p">
+                    Total <br /><span> / person </span>
+                  </p>
+                  <h1 class="shower">$0.00</h1>
+                </div>
+              </div>
+              <div class="right-btn">
+                <button class="reset-btn">RESET</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

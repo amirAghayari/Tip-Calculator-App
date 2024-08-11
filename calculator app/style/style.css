@@ -60,10 +60,182 @@ main {
 
 .calc-div {
   background-color: var(--white);
-  width: 60rem;
-  height: 35rem;
+  width: 65rem;
+  height: 33rem;
   padding: 1.4rem;
   border-radius: 1.8rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+/* all label */
+.label {
+  font-size: 1.6rem;
+  color: var(--lowdark-green);
+  font-family: serif;
+}
+
+/* main inputs */
+.inps {
+  padding: 0.6rem;
+  border: solid 0.1rem var(--dark-green);
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+}
+
+.left-calc {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Bill */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-input:hover {
+  border: solid 0.1rem var(--p-color);
+  cursor: pointer;
+}
+
+/* Select */
+
+.main-h2 {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  color: var(--lowdark-green);
+  margin-bottom: 1.2rem;
+}
+
+.btn-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.select-btn {
+  width: 9rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  border: none;
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--dark-green);
+  color: var(--white);
+  transition: all 0.2s;
+}
+.select-btn:hover {
+  background-color: var(--backgroung-primary);
+  color: var(--dark-green);
+  cursor: pointer;
+  box-shadow: 0.4rem 0.4rem 2rem var(--dark-green);
+  transform: translateY(-2px);
+}
+
+.select-inp {
+  width: 9rem;
+  height: 4rem;
+  border-radius: 0.4rem;
+  border: 2px solid var(--dark-green);
+  font-family: serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.select-inp:hover {
+  border: 2px solid var(--p-color);
+  cursor: pointer;
+}
+
+/* the last part on the right */
+.error-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.error-p {
+  color: firebrick;
+  font-size: 1.2rem;
+  /* fix this later in js */
+  display: none;
+}
+
+.last-inp:hover {
+  border: solid 0.1rem var(--p-color);
+  cursor: pointer;
+}
+
+/* right */
+
+.right-calc {
+  background-color: var(--dark-green);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.right-firstdiv {
+  margin: 3rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.right-p {
+  color: var(--white);
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+span {
+  font-size: 1.2rem;
+  color: var(--lowdark-green);
+  font-family: sans-serif;
+}
+
+.amount-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.total-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shower {
+  color: var(--p-color);
+  font-size: 3.6rem;
+}
+
+/* right button */
+.right-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.reset-btn {
+  background-color: var(--light-gray);
+  width: 25rem;
+  height: 3.4rem;
+  border-radius: 0.6rem;
+  border: none;
+  transition: all 0.2s;
+}
+.reset-btn:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
 }
