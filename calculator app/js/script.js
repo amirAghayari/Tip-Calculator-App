@@ -14,20 +14,22 @@ const peopleNumber = document.querySelector(".last-inp");
 const tipShow = document.querySelector(".tip-shower");
 const totalShow = document.querySelector(".total-shower");
 
+const reset = document.querySelector(".reset-btn");
 // bill.addEventListener("input", () => console.log(bill.value));
 
 // a function to calculate the tip
 let ourTip = 0;
 let calcTip = function (percent) {
   ourTip = (Number(bill.value) * (percent / 100)).toFixed(2);
+  ourTip *= +peopleNumber.value;
   return ourTip;
 };
 
 // total section
 let total = 0;
 const calcTotal = function () {
-  total = Number(ourTip + Number(bill.value)).toFixed(2);
-
+  total = (+ourTip + +bill.value).toFixed(2);
+  total *= (+peopleNumber.value).toFixed(2);
   return total;
 };
 
@@ -61,7 +63,10 @@ const customTip = function () {
 };
 selectInp.addEventListener("input", customTip);
 
-if (tipShow.textContent !== "$0.00") {
-  selectInp.value = "";
-  bill.value = "";
-}
+reset.addEventListener("click", () => {
+  tipShow.textContent = "$0.00";
+  totalShow.textContent = "$0.00";
+  peopleNumber.value = " ";
+  bill.value = " ";
+  customTip.value = " ";
+});

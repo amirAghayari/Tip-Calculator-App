@@ -1,0 +1,65 @@
+@media (max-width: 690px) {
+  .calc-div {
+    max-width: 50rem;
+    height: 38rem;
+  }
+
+  .inps {
+    width: 22rem;
+  }
+
+  .select-btn {
+    width: 7rem;
+    height: 3.6rem;
+  }
+
+  .select-inp {
+    width: 7rem;
+    height: 3.6rem;
+  }
+
+  .reset-btn {
+    width: 20rem;
+  }
+}
+@media (max-width: 522px) {
+  .container {
+    background-color: var(--backgroung-primary);
+    min-height: 95rem;
+  }
+  .calc-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    min-height: 68rem;
+  }
+  .inps {
+    width: 29.4rem;
+  }
+
+  .select-btn {
+    width: 14rem;
+    height: 4.2rem;
+  }
+
+  .select-inp {
+    width: 14rem;
+    height: 4.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .calc-div {
+    max-width: 30rem;
+    min-height: 68rem;
+  }
+  .inps {
+    width: 25rem;
+  }
+  .select-btn {
+    width: 12rem;
+  }
+  .select-inp {
+    width: 12rem;
+  }
+}
